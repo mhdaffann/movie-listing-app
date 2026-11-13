@@ -24,11 +24,12 @@ try {
 
     const data = await response.json();
 
-    if (data.Response === "True") {
-        displayMovies(data.Search);
-    } else {
-        movieContainer.innerHTML =
-            "<h2>No movies found!</h2>";
+    if (data.Response === "True" && data.Search) {
+    displayMovies(data.Search);
+} else {
+    movieContainer.innerHTML =
+        `<h2>${data.Error || "No movies found!"}</h2>`;
+    }
     }
 
 } catch (error) {
