@@ -1,3 +1,54 @@
+# 🎬 MOVIE LISTING APP
+
+A responsive and interactive movie listing web application built using HTML, CSS, and JavaScript.
+
+<p align="center">
+  <a href="https://mhdaffann.github.io/movie-listing-app/">
+    <img src="https://img.shields.io/badge/LIVE%20DEMO-VISIT%20WEBSITE-blue?style=for-the-badge&logo=github" alt="Live Demo">
+  </a>
+</p>
+
+---
+
+## 📌 ABOUT THE PROJECT
+
+Movie Listing App is a front-end web development project that provides a simple and user-friendly interface for browsing movie listings.
+
+Built using HTML, CSS, and vanilla JavaScript, the application demonstrates the fundamentals of web development, including webpage structuring, styling, and interactive functionality.
+
+---
+
+## ✨ FEATURES
+
+- 🎥 Movie listings with an organized layout.
+- 🎨 Clean and visually appealing user interface.
+- 📱 Responsive web design.
+- ⚡ Interactive elements powered by JavaScript.
+- 🌐 Accessible through modern web browsers.
+- 🚀 Hosted using GitHub Pages.
+
+---
+
+## 🛠️ TECHNOLOGIES USED
+
+- **HTML5** – Webpage structure and content.
+- **CSS3** – Styling, layouts, and responsive design.
+- **JavaScript** – Interactive functionality and dynamic behavior.
+- **Git & GitHub** – Version control and repository management.
+- **GitHub Pages** – Website hosting and deployment.
+
+---
+
+## 📂 PROJECT STRUCTURE
+
+```text
+movie-listing-app/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── README.md
 🎬 Movie Listing App
 
 A simple and interactive Movie Listing Web Application built using HTML, CSS, and JavaScript. This project provides a user-friendly interface for exploring and browsing movie listings with a clean and visually appealing design.
