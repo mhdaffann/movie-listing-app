@@ -19,7 +19,7 @@ movieContainer.innerHTML =
 
 try {
     const response = await fetch(
-        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${encodeURIComponent(searchValue)}`
+        `http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${encodeURIComponent(searchValue)}`
     );
 
     const data = await response.json();
