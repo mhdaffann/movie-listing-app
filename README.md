@@ -75,7 +75,7 @@ This project was developed to gain practical experience in:
 
 👨‍💻 Author
 
-Md Haffan
+Muhammedd Affan
 
 GitHub: "@mhdaffann" (https://github.com/mhdaffann)
 
