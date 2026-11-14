@@ -1,4 +1,4 @@
-#🎬 Movie Listing App#
+#🎬 Movie Listing App
 
 A simple and interactive Movie Listing Web Application built using HTML, CSS, and JavaScript. This project provides a user-friendly interface for exploring and browsing movie listings with a clean and visually appealing design.
 
