@@ -1,10 +1,9 @@
-// Enter your OMDb API key here
-const API_KEY = "79a29298";
+// Add your replacement OMDb API key here
+const API_KEY = "25ce5b6a";
 
 const searchInput = document.getElementById("searchInput");
 const movieContainer = document.getElementById("movieContainer");
 
-// Search movies
 async function searchMovies() {
 const searchValue = searchInput.value.trim();
 
@@ -19,38 +18,36 @@ movieContainer.innerHTML =
 
 try {
     const response = await fetch(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=79a29298&s=${encodeURIComponent(searchValue)}`
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${encodeURIComponent(searchValue)}`
     );
 
     const data = await response.json();
 
     if (data.Response === "True" && data.Search) {
-    displayMovies(data.Search);
-} else {
-    movieContainer.innerHTML =
-        `<h2>${data.Error || "No movies found!"}</h2>`;
-    }
+        displayMovies(data.Search);
+    } else {
+        movieContainer.innerHTML =
+            `<h2>${data.Error || "No movies found!"}</h2>`;
     }
 
 } catch (error) {
+    console.error(error);
     movieContainer.innerHTML =
         "<h2>Something went wrong. Try again!</h2>";
 }
 
 }
 
-// Display movies
 function displayMovies(movies) {
 movieContainer.innerHTML = "";
 
 movies.forEach(movie => {
+    const movieCard = document.createElement("div");
+    movieCard.classList.add("movie-card");
 
     const poster = movie.Poster !== "N/A"
         ? movie.Poster
         : "https://placehold.co/300x450?text=No+Poster";
-
-    const movieCard = document.createElement("div");
-    movieCard.classList.add("movie-card");
 
     movieCard.innerHTML = `
         <img src="${poster}" alt="${movie.Title}">
@@ -64,7 +61,6 @@ movies.forEach(movie => {
 
 }
 
-// Search when Enter is pressed
 searchInput.addEventListener("keydown", function(event) {
 if (event.key === "Enter") {
 searchMovies();
