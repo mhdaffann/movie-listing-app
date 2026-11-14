@@ -126,7 +126,7 @@ This project was developed to gain practical experience in:
 
 👨‍💻 Author
 
-Muhammedd Affan
+Muhammed Affan
 
 GitHub: "@mhdaffann" (https://github.com/mhdaffann)
 
